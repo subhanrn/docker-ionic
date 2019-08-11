@@ -7,9 +7,9 @@ RUN apt-get update
 
 RUN apt-get install -y curl git software-properties-common unzip
 
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install -y nodejs
-RUN npm install -g cordova@8.1.2 ionic
+RUN npm install -g cordova ionic
 
 RUN add-apt-repository ppa:openjdk-r/ppa -y
 RUN apt-get update
